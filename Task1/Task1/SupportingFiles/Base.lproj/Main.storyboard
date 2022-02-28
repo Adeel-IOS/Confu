@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Images View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ImagesViewController" id="BYZ-38-t0r" customClass="ImagesViewController" customModule="Task1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rOs-Sh-cGA">
+                                <rect key="frame" x="87" y="52" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="bAr-7b-ceZ"/>
+                                    <constraint firstAttribute="width" constant="240" id="ijN-PB-6xw"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="65g-QF-nAU">
+                                <rect key="frame" x="87" y="176" width="240" height="4"/>
+                            </progressView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HDl-mR-0mM">
+                                <rect key="frame" x="87" y="188" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="IuE-we-0F5"/>
+                                    <constraint firstAttribute="width" constant="240" id="TnS-f3-RdY"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cra-nK-5zX">
+                                <rect key="frame" x="87" y="312" width="240" height="4"/>
+                            </progressView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="01p-I3-vqT">
+                                <rect key="frame" x="87" y="324" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="OaK-ie-TTh"/>
+                                    <constraint firstAttribute="height" constant="128" id="cxe-Up-BBf"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xgi-h0-96q">
+                                <rect key="frame" x="87" y="448" width="240" height="4"/>
+                            </progressView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="01p-I3-vqT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="35c-qX-qed"/>
+                            <constraint firstItem="01p-I3-vqT" firstAttribute="top" secondItem="HDl-mR-0mM" secondAttribute="bottom" constant="8" id="42G-iy-Ng1"/>
+                            <constraint firstItem="HDl-mR-0mM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="58d-yw-Zni"/>
+                            <constraint firstItem="xgi-h0-96q" firstAttribute="bottom" secondItem="01p-I3-vqT" secondAttribute="bottom" id="6Td-CE-Gug"/>
+                            <constraint firstItem="rOs-Sh-cGA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="Epf-QR-fsh"/>
+                            <constraint firstItem="HDl-mR-0mM" firstAttribute="top" secondItem="rOs-Sh-cGA" secondAttribute="bottom" constant="8" id="IvU-rT-png"/>
+                            <constraint firstItem="65g-QF-nAU" firstAttribute="centerX" secondItem="rOs-Sh-cGA" secondAttribute="centerX" id="Lcl-60-eIa"/>
+                            <constraint firstItem="xgi-h0-96q" firstAttribute="centerX" secondItem="01p-I3-vqT" secondAttribute="centerX" id="Nzy-42-xzo"/>
+                            <constraint firstItem="xgi-h0-96q" firstAttribute="width" secondItem="01p-I3-vqT" secondAttribute="width" id="RLC-my-7li"/>
+                            <constraint firstItem="cra-nK-5zX" firstAttribute="centerX" secondItem="HDl-mR-0mM" secondAttribute="centerX" id="a45-3n-9rt"/>
+                            <constraint firstItem="cra-nK-5zX" firstAttribute="width" secondItem="HDl-mR-0mM" secondAttribute="width" id="d5V-mf-CCN"/>
+                            <constraint firstItem="65g-QF-nAU" firstAttribute="bottom" secondItem="rOs-Sh-cGA" secondAttribute="bottom" id="hh2-c0-4Zr"/>
+                            <constraint firstItem="rOs-Sh-cGA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jDE-BQ-hkS"/>
+                            <constraint firstItem="cra-nK-5zX" firstAttribute="bottom" secondItem="HDl-mR-0mM" secondAttribute="bottom" id="lRD-AQ-osR"/>
+                            <constraint firstItem="65g-QF-nAU" firstAttribute="width" secondItem="rOs-Sh-cGA" secondAttribute="width" id="wzh-68-vvY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstImageView" destination="rOs-Sh-cGA" id="292-4G-F0d"/>
+                        <outlet property="firstProgressVieew" destination="65g-QF-nAU" id="0Y4-XN-wZE"/>
+                        <outlet property="secondImageView" destination="HDl-mR-0mM" id="NHa-Aw-JMa"/>
+                        <outlet property="secondProgressView" destination="cra-nK-5zX" id="J6E-K8-Yhc"/>
+                        <outlet property="thirdImageView" destination="01p-I3-vqT" id="XJ0-Ke-HV3"/>
+                        <outlet property="thirdProgressView" destination="xgi-h0-96q" id="p2G-f8-K3k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
